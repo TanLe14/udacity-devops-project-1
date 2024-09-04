@@ -41,14 +41,14 @@ $ packer build packer/server.json
 ```
 $ cd terraform/azure_resources
 $ terraform init
-$ terraform plan -var-file ../enviroments/dev.tfvars -out solution.plan
+$ terraform plan -var-file ../enviroments/var.tfvars -out solution.plan
 ```
 
 ### Deploy with Terraform
 
 ```
 $ cd terraform/azure_resources
-$ terraform apply -var-file ../enviroments/dev.tfvars
+$ terraform apply -var-file ../enviroments/var.tfvars
 ```
 
 ## After
@@ -57,7 +57,7 @@ Destroy the infrastructure with:
 
 ```
 $ cd terraform/azure_resources
-$ terraform deploy -var-file ../enviroments/dev.tfvars
+$ terraform deploy -var-file ../enviroments/var.tfvars
 ```
 
 ## Modify
